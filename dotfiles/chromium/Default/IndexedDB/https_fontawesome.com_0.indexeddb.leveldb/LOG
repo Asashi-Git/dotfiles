@@ -1,6 +1,0 @@
-2025/04/09-16:30:11.220 613 Creating DB /home/sam/.config/chromium/Default/IndexedDB/https_fontawesome.com_0.indexeddb.leveldb since it was missing.
-2025/04/09-16:30:11.222 613 Reusing MANIFEST /home/sam/.config/chromium/Default/IndexedDB/https_fontawesome.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/04/09-16:53:26.741 614 Level-0 table #5: started
-2025/04/09-16:53:26.743 614 Level-0 table #5: 7174 bytes OK
-2025/04/09-16:53:26.745 614 Delete type=0 #3
-2025/04/09-16:53:26.745 614 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

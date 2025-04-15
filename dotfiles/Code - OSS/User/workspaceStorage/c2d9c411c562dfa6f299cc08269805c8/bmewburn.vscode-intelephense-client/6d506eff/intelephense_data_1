@@ -1,1 +1,0 @@
-{"timestamp":1744121867858,"counter":{"next":152,"holes":[]},"environment":{"documentRoot":"","includePaths":[],"phpVersion":"8.4.0","shortOpenTag":true},"compatibility":{"correctForArrayAccessArrayAndTraversableArrayUnionTypes":true,"correctForBaseClassStaticUnionTypes":true,"preferPsalmPhpstanPrefixedAnnotations":false},"intelephenseVersion":"1.14.4"}

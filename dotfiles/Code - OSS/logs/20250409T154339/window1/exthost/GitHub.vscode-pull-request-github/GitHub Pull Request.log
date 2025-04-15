@@ -1,6 +1,0 @@
-2025-04-09 15:43:40.649 [warning] /home/sam/.ssh/config: ENOENT: no such file or directory, open '/home/sam/.ssh/config'
-2025-04-09 15:43:40.650 [info] [Activation] Extension version: 0.108.0
-2025-04-09 15:43:40.663 [info] [Activation] Looking for git repository
-2025-04-09 15:43:40.663 [info] [Activation] Found 0 repositories during activation
-2025-04-09 15:43:40.663 [info] [Activation] Git repository found, initializing review manager and pr tree view.
-2025-04-09 15:43:40.663 [info] [GitAPI] Registering git provider

@@ -1,6 +1,0 @@
-2025/04/08-01:12:45.639 7b2 Creating DB /home/sam/.config/chromium/Default/IndexedDB/https_stackblitz.com_0.indexeddb.leveldb since it was missing.
-2025/04/08-01:12:45.642 7b2 Reusing MANIFEST /home/sam/.config/chromium/Default/IndexedDB/https_stackblitz.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/04/08-01:12:48.175 7b3 Level-0 table #5: started
-2025/04/08-01:12:48.177 7b3 Level-0 table #5: 1266 bytes OK
-2025/04/08-01:12:48.179 7b3 Delete type=0 #3
-2025/04/08-01:12:48.180 7b3 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

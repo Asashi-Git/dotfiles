@@ -1,6 +1,0 @@
-2025/04/07-01:08:23.566 765 Creating DB /home/sam/.config/chromium/Default/IndexedDB/https_whatismyipaddress.com_0.indexeddb.leveldb since it was missing.
-2025/04/07-01:08:23.568 765 Reusing MANIFEST /home/sam/.config/chromium/Default/IndexedDB/https_whatismyipaddress.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/04/07-01:08:48.617 766 Level-0 table #5: started
-2025/04/07-01:08:48.618 766 Level-0 table #5: 7711 bytes OK
-2025/04/07-01:08:48.620 766 Delete type=0 #3
-2025/04/07-01:08:48.620 766 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
