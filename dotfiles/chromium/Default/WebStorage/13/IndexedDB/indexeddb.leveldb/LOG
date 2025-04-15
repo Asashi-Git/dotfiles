@@ -1,0 +1,13 @@
+2025/04/15-21:16:13.828 647 Reusing MANIFEST /home/sam/.config/chromium/Default/WebStorage/13/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2025/04/15-21:16:13.828 647 Recovering log #113
+2025/04/15-21:16:13.833 647 Reusing old log /home/sam/.config/chromium/Default/WebStorage/13/IndexedDB/indexeddb.leveldb/000113.log 
+2025/04/15-21:16:15.097 646 Level-0 table #118: started
+2025/04/15-21:16:15.112 646 Level-0 table #118: 1452839 bytes OK
+2025/04/15-21:16:15.114 646 Delete type=0 #113
+2025/04/15-21:16:15.238 646 Compacting 1@1 + 1@2 files
+2025/04/15-21:16:15.252 646 Generated table #119@1: 5623 keys, 2182911 bytes
+2025/04/15-21:16:15.253 646 Generated table #120@1: 144 keys, 168351 bytes
+2025/04/15-21:16:15.254 646 Compacted 1@1 + 1@2 files => 2351262 bytes
+2025/04/15-21:16:15.255 646 compacted to: files[ 0 0 3 0 0 0 0 ]
+2025/04/15-21:16:15.255 646 Delete type=2 #115
+2025/04/15-21:16:15.255 646 Delete type=2 #118

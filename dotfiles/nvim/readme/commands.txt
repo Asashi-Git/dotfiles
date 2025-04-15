@@ -1,0 +1,483 @@
+# Neovim Commands Reference
+
+This document contains a categorized list of Neovim commands set up in your configuration, including default commands.
+
+## File Navigation Commands
+
+### Neotree:
+- **Open Neotree**:
+  - **Shortcut**: `Ctrl + n`
+  - **Description**: Opens the Neotree for navigating files and directories.
+
+### Telescope:
+- **Live Grep**:
+  - **Shortcut**: `Space -> fg`
+  - **Description**: Opens Telescope to search through files for text in real-time.
+
+- **File Explorer**:
+  - **Shortcut**: `Ctrl + cp`
+  - **Description**: Launches the Telescope file explorer for easy file navigation.
+
+## Tmux Navigation Commands
+
+- **Navigate Left**:
+  - **Shortcut**: `Ctrl + h`
+  - **Description**: Switches focus to the left tmux pane.
+
+- **Navigate Down**:
+  - **Shortcut**: `Ctrl + j`
+  - **Description**: Switches focus to the bottom tmux pane.
+
+- **Navigate Up**:
+  - **Shortcut**: `Ctrl + k`
+  - **Description**: Switches focus to the upper tmux pane.
+
+- **Navigate Right**:
+  - **Shortcut**: `Ctrl + l`
+  - **Description**: Switches focus to the right tmux pane.
+
+## File Management Commands
+
+### Oil.nvim:
+- **Toggle Floating File Explorer**:
+  - **Shortcut**: `-`
+  - **Description**: Toggles the floating file explorer provided by the oil.nvim plugin.
+
+## Debugging Commands
+
+- **Toggle Breakpoint**:
+  - **Shortcut**: `<Leader> dt`
+  - **Description**: Sets or removes a breakpoint in your code.
+
+- **Continue Execution**:
+  - **Shortcut**: `<Leader> dc`
+  - **Description**: Continues execution of the program until the next breakpoint.
+
+## Git Integration Commands
+
+### Gitsigns:
+- **Preview Hunk**:
+  - **Shortcut**: `<Leader> gp`
+  - **Description**: Previews changes in the current hunk of code.
+
+- **Toggle Current Line Blame**:
+  - **Shortcut**: `<Leader> gt`
+  - **Description**: Toggles display of blame information for the current line.
+
+## Formatting Commands
+
+- **Format on Save**:
+  - **Description**: Automatically formats the open file using the configured formatters when the file is saved.
+  - **Shortcut**: `autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()`
+  - **Note**: Ensure you have the LA/LS (Language Server or LSP) configured properly for the appropriate formatting functionality.
+
+## Default Neovim Commands
+
+1. **Quit**: 
+   - **Command**: `:q`
+   - **Description**: Exits the current buffer. If there are unsaved changes, it will prompt to save.
+
+2. **Force Quit**: 
+   - **Command**: `:q!`
+   - **Description**: Exits the current buffer without saving changes.
+
+3. **Save**: 
+   - **Command**: `:w`
+   - **Description**: Saves the current buffer.
+
+4. **Save and Quit**: 
+   - **Command**: `:wq`
+   - **Description**: Saves the current buffer and exits.
+
+5. **Undo**: 
+   - **Command**: `u`
+   - **Description**: Undoes the last change.
+
+6. **Redo**: 
+   - **Command**: `<Ctrl + r>`
+   - **Description**: Redoes the last undone change.
+
+7. **Open Command-Line**: 
+   - **Command**: `:`
+   - **Description**: Opens the command-line interface for issuing commands.
+
+8. **Switch Between Buffers**:
+   - **Command**: `:bnext` / `:bprev`
+   - **Description**: Switches to the next or previous buffer.
+
+9. **Close Current Buffer**:
+   - **Command**: `:bd`
+   - **Description**: Deletes the current buffer from the buffer list.
+
+10. **Search in File**:
+    - **Command**: `/searchterm`
+    - **Description**: Searches for "searchterm" forward in the current document.
+
+11. **Search Backward**:
+    - **Command**: `?searchterm`
+    - **Description**: Searches for "searchterm" backward in the current document.
+
+12. **Next Search Match**:
+    - **Command**: `n`
+    - **Description**: Goes to the next match of the last search.
+
+13. **Previous Search Match**:
+    - **Command**: `N`
+    - **Description**: Goes to the previous match of the last search.
+
+14. **Open File**:
+    - **Command**: `:e filename`
+    - **Description**: Opens the specified file.
+
+15. **Open File with Split**:
+    - **Command**: `:vsp filename`
+    - **Description**: Opens the specified file in a vertical split.
+
+16. **Save As**:
+    - **Command**: `:w filename`
+    - **Description**: Saves the current buffer with a new filename.
+
+17. **Command History**:
+    - **Command**: `:command`
+    - **Description**: Lists all user-defined commands.
+
+18. **List All Buffers**:
+    - **Command**: `:ls`
+    - **Description**: Lists all open buffers.
+
+19. **Jump to Line**:
+    - **Command**: `:line_number`
+    - **Description**: Jumps to the specified line number.
+
+20. **Enable Line Numbers**:
+    - **Command**: `:set number`
+    - **Description**: Displays line numbers in the buffer.
+
+21. **Disable Line Numbers**:
+    - **Command**: `:set nonumber`
+    - **Description**: Hides line numbers in the buffer.
+
+22. **Indent Selected Lines**:
+    - **Command**: `>visual_mode`
+    - **Description**: Indents the selected lines.
+
+23. **Outdent Selected Lines**:
+    - **Command**: `<visual_mode`
+    - **Description**: Outdents the selected lines.
+
+24. **Highlight Search**:
+    - **Command**: `:set hlsearch`
+    - **Description**: Highlights all matches as you type a search.
+
+25. **Disable Highlight Search**:
+    - **Command**: `:set nohlsearch`
+    - **Description**: Disables highlighting of search matches.
+
+26. **Copy to Clipboard**:
+    - **Command**: `"+y`
+    - **Description**: Copies selected text to system clipboard.
+
+27. **Paste from Clipboard**:
+    - **Command**: `"+p`
+    - **Description**: Pastes text from system clipboard.
+
+28. **Delete Current Line**:
+    - **Command**: `dd`
+    - **Description**: Deletes the current line.
+
+29. **Duplicate Current Line**:
+    - **Command**: `Y`
+    - **Description**: Duplicates the current line.
+
+30. **Select All**:
+    - **Command**: `ggVG`
+    - **Description**: Selects all text in the current buffer.
+
+31. **Split Window Horizontally**:
+    - **Command**: `:split`
+    - **Description**: Splits the window horizontally.
+
+32. **Split Window Vertically**:
+    - **Command**: `:vsplit`
+    - **Description**: Splits the window vertically.
+
+33. **Navigate to Next Window**:
+    - **Command**: `<C-w>w`
+    - **Description**: Switches focus to the next window.
+
+34. **Close Current Window**:
+    - **Command**: `<C-w>c`
+    - **Description**: Closes the current window.
+
+35. **Resize Window Up**:
+    - **Command**: `<C-w>+`
+    - **Description**: Increases the height of the current window.
+
+36. **Resize Window Down**:
+    - **Command**: `<C-w>-`
+    - **Description**: Decreases the height of the current window.
+
+37. **Resize Window Left**:
+    - **Command**: `<C-w><`
+    - **Description**: Decreases the width of the current window.
+
+38. **Resize Window Right**:
+    - **Command**: `<C-w>>`
+    - **Description**: Increases the width of the current window.
+
+39. **Clear Command Line**:
+    - **Command**: `:clear`
+    - **Description**: Clears the command line.
+
+40. **Toggle Fold**:
+    - **Command**: `zo`
+    - **Description**: Opens a folded section of code.
+
+41. **Close Fold**:
+    - **Command**: `zc`
+    - **Description**: Closes a folded section of code.
+
+42. **Move to Next Fold**:
+    - **Command**: `]z`
+    - **Description**: Moves the cursor to the next fold.
+
+43. **Move to Previous Fold**:
+    - **Command**: `[z`
+    - **Description**: Moves the cursor to the previous fold.
+
+44. **Switch to Insert Mode**:
+    - **Command**: `i`
+    - **Description**: Enters insert mode for editing text.
+
+45. **Exit Insert Mode**:
+    - **Command**: `<Esc>`
+    - **Description**: Exits insert mode and returns to normal mode.
+
+46. **Select Current Word**:
+    - **Command**: `viw`
+    - **Description**: Selects the current word in visual mode.
+
+47. **Select Current Paragraph**:
+    - **Command**: `vip`
+    - **Description**: Selects the current paragraph in visual mode.
+
+48. **Select Everything Inside Braces**:
+    - **Command**: `vi{`
+    - **Description**: Selects everything inside the nearest braces.
+
+49. **Select Everything Inside Parentheses**:
+    - **Command**: `vi(`
+    - **Description**: Selects everything inside the nearest parentheses.
+
+50. **Select Everything Inside Quotes**:
+    - **Command**: `vi"`
+    - **Description**: Selects everything inside the nearest quotes.
+
+51. **Select Everything Inside Angle Brackets**:
+    - **Command**: `vi<`
+    - **Description**: Selects everything inside the nearest angle brackets.
+
+52. **Swap Characters**:
+    - **Command**: `xp`
+    - **Description**: Swaps the current character with the next character.
+
+53. **Join Lines**:
+    - **Command**: `J`
+    - **Description**: Joins the current line with the next line.
+
+54. **Repeat Last Change**:
+    - **Command**: `.` (dot command)
+    - **Description**: Repeats the last change made.
+
+55. **Delete Until Character**:
+    - **Command**: `dtx`
+    - **Description**: Deletes from the cursor to the next instance of 'x'.
+
+56. **Change Until Character**:
+    - **Command**: `ctx`
+    - **Description**: Changes from the cursor to the next instance of 'x'.
+
+57. **Select Current Line and Move Down**:
+    - **Command**: `Vj`
+    - **Description**: Select the current line and the line below.
+
+58. **Select Current Line and Move Up**:
+    - **Command**: `Vk`
+    - **Description**: Select the current line and the line above.
+
+59. **Go to Beginning of Line**:
+    - **Command**: `0`
+    - **Description**: Moves the cursor to the beginning of the current line.
+
+60. **Go to End of Line**:
+    - **Command**: `$`
+    - **Description**: Moves the cursor to the end of the current line.
+
+61. **Go to Next Word**:
+    - **Command**: `w`
+    - **Description**: Moves the cursor to the beginning of the next word.
+
+62. **Go to Previous Word**:
+    - **Command**: `b`
+    - **Description**: Moves the cursor to the beginning of the previous word.
+
+63. **Go to Line Above**:
+    - **Command**: `k`
+    - **Description**: Moves the cursor up one line.
+
+64. **Go to Line Below**:
+    - **Command**: `j`
+    - **Description**: Moves the cursor down one line.
+
+65. **Go to Next Paragraph**:
+    - **Command**: `}`
+    - **Description**: Moves the cursor to the next paragraph.
+
+66. **Go to Previous Paragraph**:
+    - **Command**: `{`
+    - **Description**: Moves the cursor to the previous paragraph.
+
+67. **Repeat Last Search**:
+    - **Command**: `;`
+    - **Description**: Repeats the last search command.
+
+68. **Go Backward in Search History**:
+    - **Command**: `<C-r>`
+    - **Description**: Goes back in the search history.
+
+69. **Change to Upper Case**:
+    - **Command**: `U`
+    - **Description**: Changes the selected text to uppercase.
+
+70. **Change to Lower Case**:
+    - **Command**: `u`
+    - **Description**: Changes the selected text to lowercase.
+
+71. **Format Current Paragraph**:
+    - **Command**: `gqip`
+    - **Description**: Reformats the current paragraph based on set text width.
+
+72. **Toggle Record a Macro**:
+    - **Command**: `q<register>`
+    - **Description**: Starts recording a macro in the specified register.
+
+73. **Execute Macro**:
+    - **Command**: `@<register>`
+    - **Description**: Executes the macro stored in the specified register.
+
+74. **Go to First Non-Blank Character**:
+    - **Command**: `^`
+    - **Description**: Moves the cursor to the first non-blank character of the line.
+
+75. **Reopen Last Closed Tab**:
+    - **Command**: `:tabnew`
+    - **Description**: Opens a new tab for the last closed tab.
+
+76. **Align Text**:
+    - **Command**: `:Align`
+    - **Description**: Aligns text based on specified criteria.
+
+77. **Comment Current Line**:
+    - **Command**: `gcc`
+    - **Description**: Toggles comment for the current line.
+
+78. **Comment Selected Lines**:
+    - **Command**: `gc`
+    - **Description**: Toggles comment for the selected lines.
+
+79. **Run Last Command in Command Mode**:
+    - **Command**: `q:`
+    - **Description**: Opens command mode with a previously executed command.
+
+80. **Toggle Insert Mode**:
+    - **Command**: `a`
+    - **Description**: Appends text after the current cursor position.
+
+81. **Insert Mode at Start of Line**:
+    - **Command**: `I`
+    - **Description**: Enters insert mode at the start of the current line.
+
+82. **Change Current Word**:
+    - **Command**: `cw`
+    - **Description**: Deletes the current word and enters insert mode.
+
+83. **Change From Cursor to End of Line**:
+    - **Command**: `C`
+    - **Description**: Changes from the cursor position to the end of the line.
+
+84. **Delete Current Word**:
+    - **Command**: `dw`
+    - **Description**: Deletes from the cursor to the end of the current word.
+
+85. **Delete Until Character**:
+    - **Command**: `dt<char>`
+    - **Description**: Deletes to (but not including) the specified character.
+
+86. **Change Until Character**:
+    - **Command**: `ct<char>`
+    - **Description**: Changes up to (but not including) the specified character.
+
+87. **Jump to Matching Parentheses**:
+    - **Command**: `%`
+    - **Description**: Jumps between matching parentheses/braces.
+
+88. **Join Current Line and Next Line**:
+    - **Command**: `J`
+    - **Description**: Joins the current line with the next one.
+
+89. **Go to Next Unfolded Section**:
+    - **Command**: `]z`
+    - **Description**: Goes to the next unfolded fold.
+
+90. **Go to Previous Unfolded Section**:
+    - **Command**: `[z`
+    - **Description**: Goes to the previous unfolded fold.
+
+91. **Magic Search**:
+    - **Command**: `:set magic`
+    - **Description**: Enables magic characters for search patterns.
+
+92. **List Current Mappings**:
+    - **Command**: `:map`
+    - **Description**: Shows all current mappings in the command line.
+
+93. **Change All Occurrences of Word**:
+    - **Command**: `:%s/old/new/g`
+    - **Description**: Replaces all occurrences of "old" with "new" globally.
+
+94. **Remove All Trailing Whitespaces**:
+    - **Command**: `:%s/\s\+$//g`
+    - **Description**: Removes all trailing whitespace characters in the buffer.
+
+95. **Open Markdown Preview**:
+    - **Command**: `:MarkdownPreview`
+    - **Description**: Opens a live preview of the current Markdown file.
+
+96. **Change to Next Matching Character**:
+    - **Command**: `;`
+    - **Description**: Jumps to the next instance of the last searched character.
+
+97. **Change to Previous Matching Character**:
+    - **Command**: `,`
+    - **Description**: Jumps to the previous instance of the last searched character.
+
+98. **Enable Location List**:
+    - **Command**: `:lopen`
+    - **Description**: Opens the location list.
+
+99. **Close Location List**:
+    - **Command**: `:lclose`
+    - **Description**: Closes the location list.
+
+100. **View File Encoding**:
+    - **Command**: `:set fileencoding?`
+    - **Description**: Displays the encoding of the current file.
+
+101. **Lunch a python script**:
+    - **Command**: ':!python %' or ':term python %'
+    - **Description**: First lunch directly, second lunch in the terminal.
+
+## Conclusion
+
+This document serves as a comprehensive guide to the commands available in your Neovim configuration, aiming to enhance productivity and workflow.
+

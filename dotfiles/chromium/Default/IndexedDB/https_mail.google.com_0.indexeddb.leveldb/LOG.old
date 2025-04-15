@@ -1,0 +1,9 @@
+2025/04/09-23:07:47.779 7fa Reusing MANIFEST /home/sam/.config/chromium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/04/09-23:07:47.779 7fa Recovering log #21
+2025/04/09-23:07:47.780 7fa Reusing old log /home/sam/.config/chromium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000021.log 
+2025/04/09-23:07:48.787 7ee Compacting 1@1 + 1@2 files
+2025/04/09-23:07:48.793 7ee Generated table #24@1: 174 keys, 599412 bytes
+2025/04/09-23:07:48.793 7ee Compacted 1@1 + 1@2 files => 599412 bytes
+2025/04/09-23:07:48.795 7ee compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/04/09-23:07:48.795 7ee Delete type=2 #20
+2025/04/09-23:07:48.795 7ee Delete type=2 #22

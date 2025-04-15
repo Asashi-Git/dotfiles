@@ -1,0 +1,6 @@
+2025/04/13-00:34:45.668 5f4 Reusing MANIFEST /home/sam/.config/chromium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/04/13-00:34:45.669 5f4 Recovering log #21
+2025/04/13-00:34:45.672 5f4 Reusing old log /home/sam/.config/chromium/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000021.log 
+2025/04/13-00:34:47.899 5f4 Level-0 table #27: started
+2025/04/13-00:34:47.910 5f4 Level-0 table #27: 3056520 bytes OK
+2025/04/13-00:34:47.912 5f4 Delete type=0 #21

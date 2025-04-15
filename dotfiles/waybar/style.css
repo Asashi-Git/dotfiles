@@ -1,0 +1,134 @@
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+#waybar {
+  background: #1e222a;
+  color: #eeeeef;
+  font-size: 14px;
+  font-family: "Hack Nerd Font";
+}
+
+#workspaces button {
+  padding: 0 5px;
+  color: #eeeeef;
+}
+/* Fix: active workspace doesn't show up */
+/* #workspaces button.focused { */
+#workspaces button.active {
+  color: #fa5aa4;
+}
+
+#custom-powermenu,
+#battery,
+#cpu,
+#temperature,
+#memory,
+#workspaces,
+#clock,
+#window,
+#pulseaudio,
+#custom-updates,
+#network {
+  padding: 4px 8px;
+  background-color: #303643;
+  border-radius: 30px;
+  margin: 6px 4px;
+}
+
+#window {
+  color: #929db1;
+}
+
+#tray {
+  margin-left: 4px;
+}
+
+#custom-updates {
+  color: #1788e4;
+}
+
+#custom-powermenu {
+  color: #e06c75;
+  padding-right: 11px;
+  margin-right: 8px;
+}
+
+/* Battery styling for different states */
+#battery {
+    color: #98c379; /* Default battery color - green */
+}
+
+/* When charging or plugged in */
+#battery.charging, #battery.plugged {
+    color: #61afef; /* Blue when charging */
+}
+
+/* Battery states based on percentage */
+#battery.critical {
+    color: #e06c75; /* Red for critical */
+    animation: blink 1s infinite; /* Add blinking effect for critical */
+}
+
+#battery.warning {
+    color: #e5c07b; /* Yellow/amber for warning */
+}
+
+#battery.mid {
+    color: #c678dd; /* Purple for mid level */
+}
+
+#battery.good {
+    color: #98c379; /* Green for good level */
+}
+
+#battery.full {
+    color: #56b6c2; /* Cyan for full */
+}
+
+/* Add blinking animation for critical state */
+@keyframes blink {
+    to {
+        background-color: #e06c75;
+        color: #1e222a; 
+    }
+}
+
+
+#scratchpad {
+  color: #cffafe;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+#pulseaudio {
+  color: #0fb9b1;
+  padding-right: 14px;
+}
+
+#cpu {
+  color: #61afef;
+}
+
+#temperature {
+  color: #98c379;
+}
+
+#memory {
+  color: #e5c07b;
+}
+
+#network {
+  color: #c678dd;
+  min-width: 200px;
+}
+
+#clock {
+  color: #fff;
+  margin-left: 8px;
+  /* opacity: 0.7; */
+  /* font-size: 18px; */
+}

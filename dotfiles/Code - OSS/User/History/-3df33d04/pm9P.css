@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    background-color: #120c04;
+    color: #eee;
+    font-family: Poppins;
+    font-size: 16px;
+}
+/* header */
+a{
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 12px;
+}
+header{
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    background-color: transparent;
+}
+
+nav{
+    background-color: transparent;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    padding: 0.5rem;
+}
+
+header a{
+    color: #000;
+    margin-right: 40px;
+    background-color: transparent;
+}
+/* scroll animation */
+main{
+    margin-top: 2rem;
+    min-height: 100vh;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title{
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.autoShow{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+}
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+img{
+    width: 250px;
+    border-radius: 50%;
+}
+.image{
+    position: relative;
+    margin-top: -50px;
+    border-radius: 0%;
+    width: 100%;
+}
+
+.autoRotate{
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+}
+
+@keyframes autoRotateAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.about-us{
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    border-radius: 25px;
+}
+
+.left-div{
+    margin-bottom: 1rem;
+    width: 45vw;
+    border-radius: 25px;
+}
+
+.right-div{
+    margin-bottom: 1rem;
+    width: 45vw;
+    border-radius: 25px;
+}
+
+.food{
+    margin-top: 2rem;
+}
+
+.big-txt{
+    padding: 1rem;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.big-div1{
+    text-align: center;
+    margin-left: -3rem;
+}
+
+.big-div3{
+    text-align: center;
+    margin-left: -3rem;
+}
+
+.big-txt p{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* autoblur */
+.autoBlur{
+    animation: autoBlurAnimation linear both;
+    animation-timeline: view();
+}
+@keyframes autoBlurAnimation{
+    0%{
+        filter: blur(40px);
+    }
+    48%, 52%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(40px);
+    }
+}
+
+.temp{
+    height: 50vh;
+}

@@ -1,0 +1,1021 @@
+➜  nvim ls
+commands.txt  config-tree.txt  init.lua  lazy-lock.json  lua
+➜  nvim cat commands.txt 
+
+In this file you can see all the commands to that i created for my Nvim config :
+
+
+To see Neotree files and directory:
+    -Use: Ctrl + n
+
+To prompte telescope live grep:
+    -Use: Space -> f -> g
+
+To prompt telescope file explorer:
+    -Use: CTRL + CP
+
+
+➜  nvim cat init.lua 
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
+
+require("vim-options")
+require("lazy").setup("plugins")
+➜  nvim cat lazy-lock.json 
+{
+  "LuaSnip": { "branch": "master", "commit": "c9b9a22904c97d0eb69ccb9bab76037838326817" },
+  "alpha-nvim": { "branch": "main", "commit": "de72250e054e5e691b9736ee30db72c65d560771" },
+  "catppuccin": { "branch": "main", "commit": "5b5e3aef9ad7af84f463d17b5479f06b87d5c429" },
+  "cmp-nvim-lsp": { "branch": "main", "commit": "a8912b88ce488f411177fc8aed358b04dc246d7b" },
+  "cmp_luasnip": { "branch": "master", "commit": "98d9cb5c2c38532bd9bdb481067b20fea8f32e90" },
+  "friendly-snippets": { "branch": "main", "commit": "efff286dd74c22f731cdec26a70b46e5b203c619" },
+  "gitsigns.nvim": { "branch": "main", "commit": "17ab794b6fce6fce768430ebc925347e349e1d60" },
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "mason-lspconfig.nvim": { "branch": "main", "commit": "1a31f824b9cd5bc6f342fc29e9a53b60d74af245" },
+  "mason-tool-installer.nvim": { "branch": "main", "commit": "1255518cb067e038a4755f5cb3e980f79b6ab89c" },
+  "mason.nvim": { "branch": "main", "commit": "fc98833b6da5de5a9c5b1446ac541577059555be" },
+  "neo-tree.nvim": { "branch": "v3.x", "commit": "9b5d67119c46e3262ffe1508fe6d8540b79ad75d" },
+  "none-ls.nvim": { "branch": "main", "commit": "6377e77dae38015d0a8c24852530098f1d8a24f6" },
+  "nui.nvim": { "branch": "main", "commit": "8d3bce9764e627b62b07424e0df77f680d47ffdb" },
+  "nvim-cmp": { "branch": "main", "commit": "059e89495b3ec09395262f16b1ad441a38081d04" },
+  "nvim-dap": { "branch": "master", "commit": "7aade9e99bef5f0735cf966e715b3ce45515d786" },
+  "nvim-dap-go": { "branch": "main", "commit": "8763ced35b19c8dc526e04a70ab07c34e11ad064" },
+  "nvim-dap-ui": { "branch": "master", "commit": "bc81f8d3440aede116f821114547a476b082b319" },
+  "nvim-lspconfig": { "branch": "master", "commit": "94dda50b2d9a29d0b76562a9027029538840e2d7" },
+  "nvim-nio": { "branch": "master", "commit": "21f5324bfac14e22ba26553caf69ec76ae8a7662" },
+  "nvim-tmux-navigation": { "branch": "main", "commit": "4898c98702954439233fdaf764c39636681e2861" },
+  "nvim-treesitter": { "branch": "master", "commit": "0e21ee8df6235511c02bab4a5b391d18e165a58d" },
+  "nvim-web-devicons": { "branch": "master", "commit": "57dfa947cc88cdf1baa2c7e13ed31edddd8fb1d1" },
+  "oil.nvim": { "branch": "master", "commit": "302bbaceeafc690e6419e0c8296e804d60cb9446" },
+  "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
+  "swagger-preview.nvim": { "branch": "master", "commit": "9b9bc21096890a1bd0f221a940d04dbab87a38aa" },
+  "telescope-ui-select.nvim": { "branch": "master", "commit": "6e51d7da30bd139a6950adf2a47fda6df9fa06d2" },
+  "telescope.nvim": { "branch": "master", "commit": "d90956833d7c27e73c621a61f20b29fdb7122709" },
+  "vim-fugitive": { "branch": "master", "commit": "4a745ea72fa93bb15dd077109afbb3d1809383f2" },
+  "vim-test": { "branch": "master", "commit": "b0c3e13249699a522c8b472ff79eff40d2935476" },
+  "vimux": { "branch": "master", "commit": "7db6b2f79d432ee3820668b1d4625311dbe1d0ad" }
+}
+➜  nvim cd lua 
+➜  lua ls
+plugins  plugins.lua  vim-options.lua
+➜  lua cat plugins.lua 
+return {}
+➜  lua cat vim-options.lua 
+vim.cmd("set expandtab")
+vim.cmd("set tabstop=2")
+vim.cmd("set softtabstop=2")
+vim.cmd("set shiftwidth=2")
+vim.g.mapleader = " "
+vim.g.background = "light"
+
+vim.opt.swapfile = false
+
+-- Navigate vim panes better
+vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
+vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
+vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
+vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
+
+vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+vim.wo.number = true
+
+➜  lua cd plugins 
+➜  plugins ls
+alpha.lua        gitsigns.lua     neo-tree.lua              oil.lua              vim-test.lua
+catppuccin.lua   git-stuff.lua    none-ls.lua               swagger-preview.lua
+completions.lua  lsp-config.lua   null-ls.lua               telescope.lua
+debuggin.lua     mason-tools.lua  nvim-tmux-navigation.lua  treesitter.lua
+➜  plugins cat alpha.lua 
+return {
+  "goolord/alpha-nvim",
+  dependencies = {
+    "nvim-tree/nvim-web-devicons",
+  },
+
+  config = function()
+    local alpha = require("alpha")
+    local dashboard = require("alpha.themes.startify")
+
+    dashboard.section.header.val = {
+      [[                                                                       ]],
+      [[                                                                       ]],
+      [[                                                                       ]],
+      [[                                                                       ]],
+      [[                                                                     ]],
+      [[       ████ ██████           █████      ██                     ]],
+      [[      ███████████             █████                             ]],
+      [[      █████████ ███████████████████ ███   ███████████   ]],
+      [[     █████████  ███    █████████████ █████ ██████████████   ]],
+      [[    █████████ ██████████ █████████ █████ █████ ████ █████   ]],
+      [[  ███████████ ███    ███ █████████ █████ █████ ████ █████  ]],
+      [[ ██████  █████████████████████ ████ █████ █████ ████ ██████ ]],
+      [[                                                                       ]],
+      [[                                                                       ]],
+      [[                                                                       ]],
+    }
+
+    alpha.setup(dashboard.opts)
+  end,
+}
+➜  plugins cat catppuccin.lua 
+return {
+  {
+    "catppuccin/nvim",
+    lazy = false,
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme "catppuccin-mocha"
+    end
+  }
+}
+➜  plugins cat completions.lua 
+return {
+  {
+    "hrsh7th/cmp-nvim-lsp"
+  },
+  {
+    "L3MON4D3/LuaSnip",
+    dependencies = {
+      "saadparwaiz1/cmp_luasnip",
+      "rafamadriz/friendly-snippets",
+    },
+  },
+  {
+    "hrsh7th/nvim-cmp",
+    config = function()
+      local cmp = require("cmp")
+      require("luasnip.loaders.from_vscode").lazy_load()
+
+      cmp.setup({
+        snippet = {
+          expand = function(args)
+            require("luasnip").lsp_expand(args.body)
+          end,
+        },
+        window = {
+          completion = cmp.config.window.bordered(),
+          documentation = cmp.config.window.bordered(),
+        },
+        mapping = cmp.mapping.preset.insert({
+          ["<C-b>"] = cmp.mapping.scroll_docs(-4),
+          ["<C-f>"] = cmp.mapping.scroll_docs(4),
+          ["<C-Space>"] = cmp.mapping.complete(),
+          ["<C-e>"] = cmp.mapping.abort(),
+          ["<CR>"] = cmp.mapping.confirm({ select = true }),
+        }),
+        sources = cmp.config.sources({
+          { name = "nvim_lsp" },
+          { name = "luasnip" }, -- For luasnip users.
+        }, {
+          { name = "buffer" },
+        }),
+      })
+    end,
+  },
+}
+➜  plugins cat debuggin.lua 
+return {
+  "mfussenegger/nvim-dap",
+  dependencies = {
+    "rcarriga/nvim-dap-ui",
+    "nvim-neotest/nvim-nio",
+    "leoluz/nvim-dap-go",
+  },
+  config = function ()
+    local dap = require("dap")
+    local dapui = require("dapui")
+
+    require("dap-go").setup()
+    require("dapui").setup()
+
+    dap.listeners.before.attach.dapui_config = function()
+      dapui.open()
+    end
+    dap.listeners.before.launch.dapui_config = function()
+      dapui.open()
+    end
+    dap.listeners.before.event_terminated.dapui_config = function()
+      dapui.close()
+    end
+    dap.listeners.before.event_exited.dapui_config = function()
+      dapui.close()
+    end
+
+    vim.keymap.set('n', '<Leader>dt', dap.toggle_breakpoint, {})
+    vim.keymap.set('n', '<Leader>dc', dap.continue, {})
+  end,
+}
+➜  plugins cat gitsigns.lua 
+return {
+  {
+    "tpope/vim-fugitive",
+  },
+  {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require("gitsigns").setup()
+    end,
+  }
+}
+➜  plugins cat git-stuff.lua 
+return {
+  {
+    "tpope/vim-fugitive"
+  },
+  {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require("gitsigns").setup()
+
+      vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", {})
+      vim.keymap.set("n", "<leader>gt", ":Gitsigns toggle_current_line_blame<CR>", {})
+    end
+  }
+}
+➜  plugins cat lsp-config.lua 
+return {
+  {
+    "williamboman/mason.nvim",
+    lazy = false,
+    config = function()
+      require("mason").setup()
+    end,
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    lazy = false,
+    opts = {
+      auto_install = true,
+      ensure_installed = {
+        -- JavaScript/TypeScript - FIXED NAME
+        "tsserver", -- Changed from "typescript" to "tsserver"
+        "eslint",
+
+        -- PHP
+        "intelephense",
+
+        -- HTML/CSS
+        "html",
+        "cssls",
+        "tailwindcss",
+
+        -- Python
+        "pyright",
+
+        -- C/C++
+        "clangd",
+
+        -- C#
+        "csharp_ls",
+
+        -- Bash
+        "bashls",
+
+        -- Other servers
+        "solargraph",
+        "lua_ls",
+      }
+    },
+  },
+  {
+    "neovim/nvim-lspconfig",
+    lazy = false,
+    config = function()
+      local capabilities = require('cmp_nvim_lsp').default_capabilities()
+      local lspconfig = require("lspconfig")
+
+      -- JavaScript/TypeScript - FIXED NAME
+      lspconfig.tsserver.setup({ capabilities = capabilities }) -- Changed from typescript to tsserver
+      lspconfig.eslint.setup({ capabilities = capabilities })
+
+      -- PHP
+      lspconfig.intelephense.setup({ capabilities = capabilities })
+
+      -- HTML/CSS
+      lspconfig.html.setup({ capabilities = capabilities })
+      lspconfig.cssls.setup({ capabilities = capabilities })
+      lspconfig.tailwindcss.setup({ capabilities = capabilities })
+
+      -- Python
+      lspconfig.pyright.setup({ capabilities = capabilities })
+
+      -- C/C++
+      lspconfig.clangd.setup({ capabilities = capabilities })
+
+      -- C#
+      lspconfig.csharp_ls.setup({ capabilities = capabilities })
+
+      -- Bash
+      lspconfig.bashls.setup({ capabilities = capabilities })
+
+      -- Keep your existing configurations
+      lspconfig.solargraph.setup({ capabilities = capabilities })
+      lspconfig.lua_ls.setup({ capabilities = capabilities })
+
+      -- Your keybindings
+      vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
+      vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
+      vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
+      vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+    end,
+  },
+}
+➜  plugins cat mason-tools.lua 
+-- Create a new file: ~/.config/nvim/lua/plugins/mason-tools.lua
+return {
+  "WhoIsSethDaniel/mason-tool-installer.nvim",
+  dependencies = {
+    "williamboman/mason.nvim",
+  },
+  config = function()
+    require("mason-tool-installer").setup({
+      ensure_installed = {
+        -- Formatters
+        "prettier",
+        "black",
+        "php-cs-fixer",
+        "clang-format",
+        "csharpier",
+        "shfmt",
+        
+        -- Linters
+        "eslint_d",
+        "phpstan",
+        "flake8",
+        "shellcheck",
+        
+        -- DAP (Debugging)
+        "php-debug-adapter",
+        "debugpy",
+        "cpptools",
+        "netcoredbg",  -- For C#
+      },
+      auto_update = true,
+    })
+  end,
+}
+
+➜  plugins cat neo-tree.lua 
+return {
+	"nvim-neo-tree/neo-tree.nvim",
+	branch = "v3.x",
+	dependencies = {
+		"nvim-lua/plenary.nvim",
+		"nvim-tree/nvim-web-devicons",
+		"MunifTanjim/nui.nvim",
+	},
+	config = function()
+		vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>", {})
+		vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
+	end,
+}
+➜  plugins cat none-ls.lua 
+return {
+  "nvimtools/none-ls.nvim",
+  config = function()
+    local null_ls = require("null-ls")
+    null_ls.setup({
+      sources = {
+        null_ls.builtins.formatting.stylua,
+        null_ls.builtins.formatting.prettier,
+        null_ls.builtins.diagnostics.erb_lint,
+        null_ls.builtins.diagnostics.rubocop,
+        null_ls.builtins.formatting.rubocop,
+      },
+    })
+
+    vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+  end,
+}
+➜  plugins cat null-ls.lua 
+-- Create a new file: ~/.config/nvim/lua/plugins/null-ls.lua
+return {
+  "nvimtools/none-ls.nvim",
+  dependencies = {
+    "williamboman/mason.nvim",
+  },
+  config = function()
+    local null_ls = require("null-ls")
+    
+    null_ls.setup({
+      sources = {
+        -- Formatting
+        null_ls.builtins.formatting.prettier, -- JavaScript, TypeScript, HTML, CSS
+        null_ls.builtins.formatting.black,    -- Python
+        null_ls.builtins.formatting.phpcsfixer, -- PHP
+        null_ls.builtins.formatting.clang_format, -- C/C++
+        null_ls.builtins.formatting.csharpier, -- C#
+        null_ls.builtins.formatting.shfmt,     -- Bash
+        
+        -- Diagnostics
+        null_ls.builtins.diagnostics.eslint, -- JavaScript/TypeScript
+        null_ls.builtins.diagnostics.phpstan, -- PHP
+        null_ls.builtins.diagnostics.flake8,  -- Python
+        null_ls.builtins.diagnostics.shellcheck, -- Bash
+      },
+    })
+    
+    -- Format on save (optional)
+    vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
+  end,
+}
+
+➜  plugins cat nvim-tmux-navigation.lua 
+return {
+  "alexghergh/nvim-tmux-navigation",
+  config = function()
+    require('nvim-tmux-navigation').setup({})
+    vim.keymap.set("n", "<C-h>", "<Cmd>NvimTmuxNavigateLeft<CR>", {})
+    vim.keymap.set("n", "<C-j>", "<Cmd>NvimTmuxNavigateDown<CR>", {})
+    vim.keymap.set("n", "<C-k>", "<Cmd>NvimTmuxNavigateUp<CR>", {})
+    vim.keymap.set("n", "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>", {})
+  end,
+}
+➜  plugins cat oil.lua 
+return {
+  "stevearc/oil.nvim",
+  config = function()
+    local oil = require("oil")
+    oil.setup()
+    vim.keymap.set("n", "-", oil.toggle_float, {})
+  end,
+}
+➜  plugins cat swagger-preview.lua 
+return {
+  "vinnymeller/swagger-preview.nvim",
+  build = "npm install -g swagger-ui-watcher",
+  config = true,
+}
+➜  plugins cat telescope.lua 
+return {
+  {
+    "nvim-telescope/telescope-ui-select.nvim",
+  },
+  {
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.5",
+    dependencies = { "nvim-lua/plenary.nvim" },
+➜  nvim pwd
+/home/sam/.config/nvim
+➜  nvim l
+total 36K
+drwxrwxrwx 1 root root  132 Apr 10 11:51 .
+drwxr-xr-x 1 sam  sam   552 Apr  9 02:53 ..
+-rw-r--r-- 1 sam  sam   256 Apr  9 21:17 commands.txt
+-rw-r--r-- 1 sam  sam   17K Apr 10 11:51 config-tmp.txt
+-rw-r--r-- 1 sam  sam  1.5K Apr  9 23:16 config-tree.txt
+-rwxrwxrwx 1 root root  372 Apr  9 02:57 init.lua
+-rw-r--r-- 1 sam  sam  2.9K Apr 10 01:30 lazy-lock.json
+drwxrwxrwx 1 root root   88 Apr  9 02:53 lua
+➜  nvim cat commands.txt 
+
+In this file you can see all the commands to that i created for my Nvim config :
+
+
+To see Neotree files and directory:
+    -Use: Ctrl + n
+
+To prompte telescope live grep:
+    -Use: Space -> f -> g
+
+To prompt telescope file explorer:
+    -Use: CTRL + CP
+
+
+➜  nvim cat init.lua 
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
+
+require("vim-options")
+require("lazy").setup("plugins")
+➜  nvim cat lazy-lock.json 
+{
+  "LuaSnip": { "branch": "master", "commit": "c9b9a22904c97d0eb69ccb9bab76037838326817" },
+  "alpha-nvim": { "branch": "main", "commit": "de72250e054e5e691b9736ee30db72c65d560771" },
+  "catppuccin": { "branch": "main", "commit": "5b5e3aef9ad7af84f463d17b5479f06b87d5c429" },
+  "cmp-nvim-lsp": { "branch": "main", "commit": "a8912b88ce488f411177fc8aed358b04dc246d7b" },
+  "cmp_luasnip": { "branch": "master", "commit": "98d9cb5c2c38532bd9bdb481067b20fea8f32e90" },
+  "friendly-snippets": { "branch": "main", "commit": "efff286dd74c22f731cdec26a70b46e5b203c619" },
+  "gitsigns.nvim": { "branch": "main", "commit": "17ab794b6fce6fce768430ebc925347e349e1d60" },
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
+  "mason-lspconfig.nvim": { "branch": "main", "commit": "1a31f824b9cd5bc6f342fc29e9a53b60d74af245" },
+  "mason-tool-installer.nvim": { "branch": "main", "commit": "1255518cb067e038a4755f5cb3e980f79b6ab89c" },
+  "mason.nvim": { "branch": "main", "commit": "fc98833b6da5de5a9c5b1446ac541577059555be" },
+  "neo-tree.nvim": { "branch": "v3.x", "commit": "9b5d67119c46e3262ffe1508fe6d8540b79ad75d" },
+  "none-ls.nvim": { "branch": "main", "commit": "6377e77dae38015d0a8c24852530098f1d8a24f6" },
+  "nui.nvim": { "branch": "main", "commit": "8d3bce9764e627b62b07424e0df77f680d47ffdb" },
+  "nvim-cmp": { "branch": "main", "commit": "059e89495b3ec09395262f16b1ad441a38081d04" },
+  "nvim-dap": { "branch": "master", "commit": "7aade9e99bef5f0735cf966e715b3ce45515d786" },
+  "nvim-dap-go": { "branch": "main", "commit": "8763ced35b19c8dc526e04a70ab07c34e11ad064" },
+  "nvim-dap-ui": { "branch": "master", "commit": "bc81f8d3440aede116f821114547a476b082b319" },
+  "nvim-lspconfig": { "branch": "master", "commit": "94dda50b2d9a29d0b76562a9027029538840e2d7" },
+  "nvim-nio": { "branch": "master", "commit": "21f5324bfac14e22ba26553caf69ec76ae8a7662" },
+  "nvim-tmux-navigation": { "branch": "main", "commit": "4898c98702954439233fdaf764c39636681e2861" },
+  "nvim-treesitter": { "branch": "master", "commit": "0e21ee8df6235511c02bab4a5b391d18e165a58d" },
+  "nvim-web-devicons": { "branch": "master", "commit": "57dfa947cc88cdf1baa2c7e13ed31edddd8fb1d1" },
+  "oil.nvim": { "branch": "master", "commit": "302bbaceeafc690e6419e0c8296e804d60cb9446" },
+  "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
+  "swagger-preview.nvim": { "branch": "master", "commit": "9b9bc21096890a1bd0f221a940d04dbab87a38aa" },
+  "telescope-ui-select.nvim": { "branch": "master", "commit": "6e51d7da30bd139a6950adf2a47fda6df9fa06d2" },
+  "telescope.nvim": { "branch": "master", "commit": "d90956833d7c27e73c621a61f20b29fdb7122709" },
+  "vim-fugitive": { "branch": "master", "commit": "4a745ea72fa93bb15dd077109afbb3d1809383f2" },
+  "vim-test": { "branch": "master", "commit": "b0c3e13249699a522c8b472ff79eff40d2935476" },
+  "vimux": { "branch": "master", "commit": "7db6b2f79d432ee3820668b1d4625311dbe1d0ad" }
+}
+➜  nvim cd lua 
+➜  lua l
+total 12K
+drwxrwxrwx 1 root root  88 Apr  9 02:53 .
+drwxrwxrwx 1 root root 132 Apr 10 11:51 ..
+-rwxrwxrwx 1 root root  53 Apr  9 02:53 .luarc.json
+drwxrwxrwx 1 root root 454 Apr 10 12:03 plugins
+-rwxrwxrwx 1 root root  10 Apr  9 02:53 plugins.lua
+-rwxrwxrwx 1 root root 471 Apr  9 02:53 vim-options.lua
+➜  lua cat .luarc.json 
+{
+    "diagnostics.globals": [
+        "vim"
+    ]
+}
+➜  lua cat plugins.lua 
+return {}
+➜  lua cat vim-options.lua 
+vim.cmd("set expandtab")
+vim.cmd("set tabstop=2")
+vim.cmd("set softtabstop=2")
+vim.cmd("set shiftwidth=2")
+vim.g.mapleader = " "
+vim.g.background = "light"
+
+vim.opt.swapfile = false
+
+-- Navigate vim panes better
+vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
+vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
+vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
+vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
+
+vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+vim.wo.number = true
+
+➜  lua cd plugins 
+➜  plugins l
+total 68K
+drwxrwxrwx 1 root root  454 Apr 10 12:03 .
+drwxrwxrwx 1 root root   88 Apr  9 02:53 ..
+-rwxrwxrwx 1 root root 2.2K Apr  9 02:53 alpha.lua
+-rwxrwxrwx 1 root root  183 Apr  9 02:53 catppuccin.lua
+-rwxrwxrwx 1 root root 1.2K Apr  9 02:53 completions.lua
+-rw-r--r-- 1 sam  sam   782 Apr  9 15:24 debuggin.lua
+-rwxrwxrwx 1 root root  152 Apr  9 02:53 gitsigns.lua
+-rwxrwxrwx 1 root root  312 Apr  9 02:53 git-stuff.lua
+-rwxrwxrwx 1 root root 2.2K Apr 10 12:03 lsp-config.lua
+-rw-r--r-- 1 sam  sam   710 Apr 10 00:29 mason-tools.lua
+-rwxrwxrwx 1 root root  347 Apr  9 02:53 neo-tree.lua
+-rwxrwxrwx 1 root root  452 Apr  9 02:53 none-ls.lua
+-rw-r--r-- 1 sam  sam  1.1K Apr 10 12:01 null-ls.lua
+-rwxrwxrwx 1 root root  402 Apr  9 02:53 nvim-tmux-navigation.lua
+-rwxrwxrwx 1 root root  161 Apr  9 02:53 oil.lua
+-rwxrwxrwx 1 root root  113 Apr  9 02:53 swagger-preview.lua
+-rwxrwxrwx 1 root root  687 Apr  9 02:53 telescope.lua
+-rwxrwxrwx 1 root root  305 Apr  9 02:53 treesitter.lua
+-rwxrwxrwx 1 root root  447 Apr  9 02:53 vim-test.lua
+➜  plugins cat alpha.lua 
+return {
+  "goolord/alpha-nvim",
+  dependencies = {
+    "nvim-tree/nvim-web-devicons",
+  },
+
+  config = function()
+    local alpha = require("alpha")
+    local dashboard = require("alpha.themes.startify")
+
+    dashboard.section.header.val = {
+      [[                                                                       ]],
+      [[                                                                       ]],
+      [[                                                                       ]],
+      [[                                                                       ]],
+      [[                                                                     ]],
+      [[       ████ ██████           █████      ██                     ]],
+      [[      ███████████             █████                             ]],
+      [[      █████████ ███████████████████ ███   ███████████   ]],
+      [[     █████████  ███    █████████████ █████ ██████████████   ]],
+      [[    █████████ ██████████ █████████ █████ █████ ████ █████   ]],
+      [[  ███████████ ███    ███ █████████ █████ █████ ████ █████  ]],
+      [[ ██████  █████████████████████ ████ █████ █████ ████ ██████ ]],
+      [[                                                                       ]],
+      [[                                                                       ]],
+      [[                                                                       ]],
+    }
+
+    alpha.setup(dashboard.opts)
+  end,
+}
+➜  plugins cat catppuccin.lua 
+return {
+  {
+    "catppuccin/nvim",
+    lazy = false,
+    name = "catppuccin",
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme "catppuccin-mocha"
+    end
+  }
+}
+➜  plugins cat completions.lua 
+return {
+  {
+    "hrsh7th/cmp-nvim-lsp"
+  },
+  {
+    "L3MON4D3/LuaSnip",
+    dependencies = {
+      "saadparwaiz1/cmp_luasnip",
+      "rafamadriz/friendly-snippets",
+    },
+  },
+  {
+    "hrsh7th/nvim-cmp",
+    config = function()
+      local cmp = require("cmp")
+      require("luasnip.loaders.from_vscode").lazy_load()
+
+      cmp.setup({
+        snippet = {
+          expand = function(args)
+            require("luasnip").lsp_expand(args.body)
+          end,
+        },
+        window = {
+          completion = cmp.config.window.bordered(),
+          documentation = cmp.config.window.bordered(),
+        },
+        mapping = cmp.mapping.preset.insert({
+          ["<C-b>"] = cmp.mapping.scroll_docs(-4),
+          ["<C-f>"] = cmp.mapping.scroll_docs(4),
+          ["<C-Space>"] = cmp.mapping.complete(),
+          ["<C-e>"] = cmp.mapping.abort(),
+          ["<CR>"] = cmp.mapping.confirm({ select = true }),
+        }),
+        sources = cmp.config.sources({
+          { name = "nvim_lsp" },
+          { name = "luasnip" }, -- For luasnip users.
+        }, {
+          { name = "buffer" },
+        }),
+      })
+    end,
+  },
+}
+➜  plugins cat debuggin.lua 
+return {
+  "mfussenegger/nvim-dap",
+  dependencies = {
+    "rcarriga/nvim-dap-ui",
+    "nvim-neotest/nvim-nio",
+    "leoluz/nvim-dap-go",
+  },
+  config = function ()
+    local dap = require("dap")
+    local dapui = require("dapui")
+
+    require("dap-go").setup()
+    require("dapui").setup()
+
+    dap.listeners.before.attach.dapui_config = function()
+      dapui.open()
+    end
+    dap.listeners.before.launch.dapui_config = function()
+      dapui.open()
+    end
+    dap.listeners.before.event_terminated.dapui_config = function()
+      dapui.close()
+    end
+    dap.listeners.before.event_exited.dapui_config = function()
+      dapui.close()
+    end
+
+    vim.keymap.set('n', '<Leader>dt', dap.toggle_breakpoint, {})
+    vim.keymap.set('n', '<Leader>dc', dap.continue, {})
+  end,
+}
+➜  plugins cat gitsigns.lua 
+return {
+  {
+    "tpope/vim-fugitive",
+  },
+  {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require("gitsigns").setup()
+    end,
+  }
+}
+➜  plugins cat git-stuff.lua 
+return {
+  {
+    "tpope/vim-fugitive"
+  },
+  {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require("gitsigns").setup()
+
+      vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", {})
+      vim.keymap.set("n", "<leader>gt", ":Gitsigns toggle_current_line_blame<CR>", {})
+    end
+  }
+}
+➜  plugins cat lsp-config.lua 
+return {
+  {
+    "williamboman/mason.nvim",
+    lazy = false,
+    config = function()
+      require("mason").setup()
+    end,
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    lazy = false,
+    opts = {
+      auto_install = true,
+      ensure_installed = {
+        -- JavaScript/TypeScript - FIXED NAME
+        "ts_ls", -- Changed from "typescript" to "tsserver"
+        "eslint",
+
+        -- PHP
+        "intelephense",
+
+        -- HTML/CSS
+        "html",
+        "cssls",
+        "tailwindcss",
+
+        -- Python
+        "pyright",
+
+        -- C/C++
+        "clangd",
+
+        -- C#
+        "csharp_ls",
+
+        -- Bash
+        "bashls",
+
+        -- Other servers
+        "solargraph",
+        "lua_ls",
+      }
+    },
+  },
+  {
+    "neovim/nvim-lspconfig",
+    lazy = false,
+    config = function()
+      local capabilities = require('cmp_nvim_lsp').default_capabilities()
+      local lspconfig = require("lspconfig")
+
+      -- JavaScript/TypeScript - FIXED NAME
+      lspconfig.ts_ls.setup({ capabilities = capabilities }) -- Changed from typescript to tsserver
+      lspconfig.eslint.setup({ capabilities = capabilities })
+
+      -- PHP
+      lspconfig.intelephense.setup({ capabilities = capabilities })
+
+      -- HTML/CSS
+      lspconfig.html.setup({ capabilities = capabilities })
+      lspconfig.cssls.setup({ capabilities = capabilities })
+      lspconfig.tailwindcss.setup({ capabilities = capabilities })
+
+      -- Python
+      lspconfig.pyright.setup({ capabilities = capabilities })
+
+      -- C/C++
+      lspconfig.clangd.setup({ capabilities = capabilities })
+
+      -- C#
+      lspconfig.csharp_ls.setup({ capabilities = capabilities })
+
+      -- Bash
+      lspconfig.bashls.setup({ capabilities = capabilities })
+
+      -- Keep your existing configurations
+      lspconfig.solargraph.setup({ capabilities = capabilities })
+      lspconfig.lua_ls.setup({ capabilities = capabilities })
+
+      -- Your keybindings
+      vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
+      vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
+      vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
+      vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+    end,
+  },
+}
+➜  plugins cat mason-tools.lua 
+-- Create a new file: ~/.config/nvim/lua/plugins/mason-tools.lua
+return {
+  "WhoIsSethDaniel/mason-tool-installer.nvim",
+  dependencies = {
+    "williamboman/mason.nvim",
+  },
+  config = function()
+    require("mason-tool-installer").setup({
+      ensure_installed = {
+        -- Formatters
+        "prettier",
+        "black",
+        "php-cs-fixer",
+        "clang-format",
+        "csharpier",
+        "shfmt",
+        
+        -- Linters
+        "eslint_d",
+        "phpstan",
+        "flake8",
+        "shellcheck",
+        
+        -- DAP (Debugging)
+        "php-debug-adapter",
+        "debugpy",
+        "cpptools",
+        "netcoredbg",  -- For C#
+      },
+      auto_update = true,
+    })
+  end,
+}
+
+➜  plugins cat neo-tree.lua 
+return {
+	"nvim-neo-tree/neo-tree.nvim",
+	branch = "v3.x",
+	dependencies = {
+		"nvim-lua/plenary.nvim",
+		"nvim-tree/nvim-web-devicons",
+		"MunifTanjim/nui.nvim",
+	},
+	config = function()
+		vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>", {})
+		vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
+	end,
+}
+➜  plugins cat none-ls.lua 
+return {
+  "nvimtools/none-ls.nvim",
+  config = function()
+    local null_ls = require("null-ls")
+    null_ls.setup({
+      sources = {
+        null_ls.builtins.formatting.stylua,
+        null_ls.builtins.formatting.prettier,
+        null_ls.builtins.diagnostics.erb_lint,
+        null_ls.builtins.diagnostics.rubocop,
+        null_ls.builtins.formatting.rubocop,
+      },
+    })
+
+    vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
+  end,
+}
+➜  plugins cat null-ls.lua 
+-- Create a new file: ~/.config/nvim/lua/plugins/null-ls.lua
+return {
+  "nvimtools/none-ls.nvim",
+  dependencies = {
+    "williamboman/mason.nvim",
+  },
+  config = function()
+    local null_ls = require("null-ls")
+
+    null_ls.setup({
+      sources = {
+        -- Formatting
+        null_ls.builtins.formatting.prettier,     -- JavaScript, TypeScript, HTML, CSS
+        null_ls.builtins.formatting.black,        -- Python
+        null_ls.builtins.formatting.phpcsfixer,   -- PHP
+        null_ls.builtins.formatting.clang_format, -- C/C++
+        null_ls.builtins.formatting.csharpier,    -- C#
+        null_ls.builtins.formatting.shfmt,        -- Bash
+
+        -- Diagnostics
+        null_ls.builtins.diagnostics.eslint,     -- JavaScript/TypeScript
+        null_ls.builtins.diagnostics.phpstan,    -- PHP
+        null_ls.builtins.diagnostics.flake8,     -- Python
+        null_ls.builtins.diagnostics.shellcheck, -- Bash
+      },
+    })
+
+    -- Format on save (optional)
+    vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
+  end,
+}
+➜  plugins cat nvim-tmux-navigation.lua 
+return {
+  "alexghergh/nvim-tmux-navigation",
+  config = function()
+    require('nvim-tmux-navigation').setup({})
+    vim.keymap.set("n", "<C-h>", "<Cmd>NvimTmuxNavigateLeft<CR>", {})
+    vim.keymap.set("n", "<C-j>", "<Cmd>NvimTmuxNavigateDown<CR>", {})
+    vim.keymap.set("n", "<C-k>", "<Cmd>NvimTmuxNavigateUp<CR>", {})
+    vim.keymap.set("n", "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>", {})
+  end,
+}
+➜  plugins cat oil.lua 
+return {
+  "stevearc/oil.nvim",
+  config = function()
+    local oil = require("oil")
+    oil.setup()
+    vim.keymap.set("n", "-", oil.toggle_float, {})
+  end,
+}
+➜  plugins cat swagger-preview.lua 
+return {
+  "vinnymeller/swagger-preview.nvim",
+  build = "npm install -g swagger-ui-watcher",
+  config = true,
+}
+➜  plugins cat telescope.lua 
+return {
+  {
+    "nvim-telescope/telescope-ui-select.nvim",
+  },
+  {
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.5",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("telescope").setup({
+        extensions = {
+          ["ui-select"] = {
+            require("telescope.themes").get_dropdown({}),
+          },
+        },
+      })
+      local builtin = require("telescope.builtin")
+      vim.keymap.set("n", "<C-p>", builtin.find_files, {})
+      vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
+      vim.keymap.set("n", "<leader><leader>", builtin.oldfiles, {})
+
+      require("telescope").load_extension("ui-select")
+    end,
+  },
+}
+➜  plugins cat treesitter.lua 
+return {
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    config = function()
+      local config = require("nvim-treesitter.configs")
+      config.setup({
+        auto_install = true,
+        highlight = { enable = true },
+        indent = { enable = true },
+      })
+    end
+  }
+}
+➜  plugins cat vim-test.lua 
+return {
+  "vim-test/vim-test",
+  dependencies = {
+    "preservim/vimux"
+  },
+  config = function()
+    vim.keymap.set("n", "<leader>t", ":TestNearest<CR>", {})
+    vim.keymap.set("n", "<leader>T", ":TestFile<CR>", {})
+    vim.keymap.set("n", "<leader>a", ":TestSuite<CR>", {})
+    vim.keymap.set("n", "<leader>l", ":TestLast<CR>", {})
+    vim.keymap.set("n", "<leader>g", ":TestVisit<CR>", {})
+    vim.cmd("let test#strategy = 'vimux'")
+  end,
+}
+➜  plugins 

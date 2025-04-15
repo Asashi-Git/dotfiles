@@ -1,0 +1,6 @@
+2025/04/15-22:34:19.488 646 Creating DB /home/sam/.config/chromium/Default/IndexedDB/https_fictional-doodle-jj457jp55494fjq5r.github.dev_0.indexeddb.leveldb since it was missing.
+2025/04/15-22:34:19.491 646 Reusing MANIFEST /home/sam/.config/chromium/Default/IndexedDB/https_fictional-doodle-jj457jp55494fjq5r.github.dev_0.indexeddb.leveldb/MANIFEST-000001
+2025/04/15-22:36:53.905 647 Level-0 table #5: started
+2025/04/15-22:36:53.910 647 Level-0 table #5: 170213 bytes OK
+2025/04/15-22:36:53.912 647 Delete type=0 #3
+2025/04/15-22:36:53.912 647 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

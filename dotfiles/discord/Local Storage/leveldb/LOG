@@ -1,0 +1,29 @@
+2025/04/15-19:04:59.948 dc48 Reusing MANIFEST /home/sam/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2025/04/15-19:04:59.951 dc48 Recovering log #586
+2025/04/15-19:04:59.951 dc48 Reusing old log /home/sam/.config/discord/Local Storage/leveldb/000586.log 
+2025/04/15-19:08:25.831 dc49 Level-0 table #592: started
+2025/04/15-19:08:25.851 dc49 Level-0 table #592: 1016019 bytes OK
+2025/04/15-19:08:25.853 dc49 Delete type=0 #586
+2025/04/15-20:22:05.789 dc48 Level-0 table #594: started
+2025/04/15-20:22:05.811 dc48 Level-0 table #594: 2520176 bytes OK
+2025/04/15-20:22:05.813 dc48 Delete type=0 #591
+2025/04/15-21:03:33.008 dc48 Level-0 table #596: started
+2025/04/15-21:03:33.018 dc48 Level-0 table #596: 17430 bytes OK
+2025/04/15-21:03:33.021 dc48 Delete type=0 #593
+2025/04/15-21:23:04.906 dc49 Level-0 table #598: started
+2025/04/15-21:23:04.915 dc49 Level-0 table #598: 33943 bytes OK
+2025/04/15-21:23:04.917 dc49 Delete type=0 #595
+2025/04/15-21:23:04.917 dc49 Compacting 4@0 + 2@1 files
+2025/04/15-21:23:04.928 dc49 Generated table #599@0: 19 keys, 2521728 bytes
+2025/04/15-21:23:04.939 dc49 Generated table #600@0: 112 keys, 3479534 bytes
+2025/04/15-21:23:04.939 dc49 Compacted 4@0 + 2@1 files => 6001262 bytes
+2025/04/15-21:23:04.942 dc49 compacted to: files[ 0 3 0 0 0 0 0 ]
+2025/04/15-21:23:04.942 dc49 Delete type=2 #588
+2025/04/15-21:23:04.942 dc49 Delete type=2 #589
+2025/04/15-21:23:04.942 dc49 Delete type=2 #592
+2025/04/15-21:23:04.942 dc49 Delete type=2 #594
+2025/04/15-21:23:04.942 dc49 Delete type=2 #596
+2025/04/15-21:23:04.942 dc49 Delete type=2 #598
+2025/04/15-22:13:38.729 dc48 Level-0 table #602: started
+2025/04/15-22:13:38.740 dc48 Level-0 table #602: 12218 bytes OK
+2025/04/15-22:13:38.742 dc48 Delete type=0 #597

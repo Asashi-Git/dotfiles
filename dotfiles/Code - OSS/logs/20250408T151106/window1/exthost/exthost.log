@@ -1,0 +1,115 @@
+2025-04-08 15:11:07.767 [info] Extension host with pid 8666 started
+2025-04-08 15:11:07.767 [info] Skipping acquiring lock for /home/sam/.config/Code - OSS/User/workspaceStorage/c2d9c411c562dfa6f299cc08269805c8.
+2025-04-08 15:11:07.790 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-04-08 15:11:07.799 [info] ExtensionService#_doActivateExtension vscode.php-language-features, startup: false, activationEvent: 'onLanguage:php'
+2025-04-08 15:11:07.807 [info] ExtensionService#_doActivateExtension bmewburn.vscode-intelephense-client, startup: false, activationEvent: 'onLanguage:php'
+2025-04-08 15:11:07.828 [info] ExtensionService#_doActivateExtension DEVSENSE.intelli-php-vscode, startup: false, activationEvent: 'onLanguage:php'
+2025-04-08 15:11:07.854 [info] ExtensionService#_doActivateExtension DEVSENSE.phptools-vscode, startup: false, activationEvent: 'onLanguage:php'
+2025-04-08 15:11:07.968 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-04-08 15:11:07.972 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-04-08 15:11:07.998 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-04-08 15:11:08.136 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-04-08 15:11:08.147 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-04-08 15:11:08.171 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-04-08 15:11:08.203 [info] Eager extensions activated
+2025-04-08 15:11:08.224 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-04-08 15:11:08.225 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-04-08 15:11:08.235 [info] ExtensionService#_doActivateExtension castrogusttavo.symbols, startup: false, activationEvent: 'onStartupFinished'
+2025-04-08 15:11:08.237 [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: false, activationEvent: 'onStartupFinished'
+2025-04-08 15:11:08.238 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-04-08 15:11:08.274 [info] ExtensionService#_doActivateExtension formulahendry.code-runner, startup: false, activationEvent: 'onStartupFinished'
+2025-04-08 15:11:08.280 [info] ExtensionService#_doActivateExtension vadimcn.vscode-lldb, startup: false, activationEvent: 'onStartupFinished', root cause: franneck94.vscode-c-cpp-config
+2025-04-08 15:11:08.288 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onStartupFinished', root cause: GitHub.vscode-pull-request-github
+2025-04-08 15:11:08.300 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2025-04-08 15:11:08.347 [info] ExtensionService#_doActivateExtension franneck94.vscode-c-cpp-config, startup: false, activationEvent: 'onStartupFinished'
+2025-04-08 15:11:08.350 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onStartupFinished'
+2025-04-08 15:11:08.485 [error] Activating extension GitHub.vscode-pull-request-github failed due to an error:
+2025-04-08 15:11:08.485 [error] Error: Extension 'GitHub.vscode-pull-request-github' CANNOT use API proposal: diffCommand.
+Its package.json#enabledApiProposals-property declares:  but NOT diffCommand.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api GitHub.vscode-pull-request-github
+	at R (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:105:19265)
+	at Object.registerDiffInformationCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:173:30058)
+	at K0 (/home/sam/.vscode-oss/extensions/github.vscode-pull-request-github-0.108.0-universal/dist/extension.js:2177:2008)
+	at L4 (/home/sam/.vscode-oss/extensions/github.vscode-pull-request-github-0.108.0-universal/dist/extension.js:2517:4466)
+	at G4 (/home/sam/.vscode-oss/extensions/github.vscode-pull-request-github-0.108.0-universal/dist/extension.js:2517:9072)
+	at async V4 (/home/sam/.vscode-oss/extensions/github.vscode-pull-request-github-0.108.0-universal/dist/extension.js:2517:6078)
+	at async cw.n (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:111:13415)
+	at async cw.m (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:111:13378)
+	at async cw.l (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:111:12834)
+2025-04-08 15:11:08.694 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'api', root cause: DEVSENSE.phptools-vscode
+2025-04-08 15:12:05.124 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-08 15:12:05.124 [error] undefined
+2025-04-08 15:12:05.129 [error] [vscode.emmet] provider FAILED
+2025-04-08 15:12:05.129 [error] TypeError: Cannot read properties of undefined (reading 'find')
+	at t.DefaultCompletionItemProvider.provideCompletionItemsInternal (/usr/lib/code/extensions/emmet/dist/node/emmetNodeMain.js:1:189993)
+	at t.DefaultCompletionItemProvider.provideCompletionItems (/usr/lib/code/extensions/emmet/dist/node/emmetNodeMain.js:1:188352)
+	at SD.provideCompletionItems (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:135:145611)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:135:168935
+	at Wt.s (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:135:160222)
+	at Wt.$provideCompletionItems (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:135:168923)
+	at i4.S (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:115936)
+	at i4.Q (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:115716)
+	at i4.M (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:114767)
+	at i4.L (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:113910)
+	at Th.value (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:112707)
+	at D.B (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:27:2375)
+	at D.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:27:2593)
+	at Jn.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:9459)
+	at Th.value (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:197:3917)
+	at D.B (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:27:2375)
+	at D.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:27:2593)
+	at Jn.fire (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:29:9459)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:197:2209)
+	at MessagePortMain.emit (node:events:524:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-04-08 15:12:05.152 [error] [DEVSENSE.phptools-vscode] provider FAILED
+2025-04-08 15:12:05.152 [error] TypeError: Cannot read properties of null (reading 'tags')
+	at N (/home/sam/.vscode-oss/extensions/devsense.phptools-vscode-1.57.17031-linux-x64/out/src/extension.js:108:46582)
+	at async SD.resolveCompletionItem (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:135:146164)
+2025-04-08 15:12:05.388 [error] [DEVSENSE.phptools-vscode] provider FAILED
+2025-04-08 15:12:05.388 [error] TypeError: Cannot read properties of null (reading 'tags')
+	at N (/home/sam/.vscode-oss/extensions/devsense.phptools-vscode-1.57.17031-linux-x64/out/src/extension.js:108:46582)
+	at async SD.resolveCompletionItem (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:135:146164)
+2025-04-08 15:12:05.591 [error] [DEVSENSE.phptools-vscode] provider FAILED
+2025-04-08 15:12:05.591 [error] TypeError: Cannot read properties of null (reading 'tags')
+	at N (/home/sam/.vscode-oss/extensions/devsense.phptools-vscode-1.57.17031-linux-x64/out/src/extension.js:108:46582)
+	at async SD.resolveCompletionItem (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:135:146164)
+2025-04-08 15:12:06.155 [error] [DEVSENSE.phptools-vscode] provider FAILED
+2025-04-08 15:12:06.155 [error] TypeError: Cannot read properties of null (reading 'tags')
+	at N (/home/sam/.vscode-oss/extensions/devsense.phptools-vscode-1.57.17031-linux-x64/out/src/extension.js:108:46582)
+	at async SD.resolveCompletionItem (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:135:146164)
+2025-04-08 15:19:15.434 [info] Extension host terminating: renderer closed the MessagePort
+2025-04-08 15:19:15.438 [error] An error occurred when disposing the subscriptions for extension 'bmewburn.vscode-intelephense-client':
+2025-04-08 15:19:15.438 [error] TypeError: Cannot read private member #e from an object whose class did not declare it
+	at Object.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:107:8994)
+	at pi (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:25:701)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:115:14994
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:25:1011
+	at Object.dispose (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:8:705)
+	at vV.eb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:115:11921)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:115:9876
+	at Array.map (<anonymous>)
+	at vV.$ (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:115:9864)
+	at vV.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:115:10107)
+	at oD.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:116:1434)
+	at es (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:197:5701)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:197:2249)
+	at MessagePortMain.emit (node:events:524:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2025-04-08 15:19:15.445 [error] Error: Channel has been closed
+	at s (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:117:2431)
+	at Object.appendLine (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:117:2570)
+	at R.logOutputMessage (/usr/lib/code/extensions/json-language-features/client/dist/node/jsonClientMain.js:2:290791)
+	at R.info (/usr/lib/code/extensions/json-language-features/client/dist/node/jsonClientMain.js:2:290524)
+	at ChildProcess.<anonymous> (/usr/lib/code/extensions/json-language-features/client/dist/node/jsonClientMain.js:2:514797)
+	at ChildProcess.emit (node:events:524:28)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-04-08 15:19:15.446 [error] Error: Channel has been closed
+	at s (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:117:2431)
+	at Object.appendLine (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:117:2570)
+	at R.logOutputMessage (/usr/lib/code/extensions/html-language-features/client/dist/node/htmlClientMain.js:2:270240)
+	at R.info (/usr/lib/code/extensions/html-language-features/client/dist/node/htmlClientMain.js:2:269973)
+	at ChildProcess.<anonymous> (/usr/lib/code/extensions/html-language-features/client/dist/node/htmlClientMain.js:2:494246)
+	at ChildProcess.emit (node:events:524:28)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-04-08 15:19:15.452 [info] Extension host with pid 8666 exiting with code 0

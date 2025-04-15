@@ -1,0 +1,7 @@
+2025/04/10-15:21:55.860 5fa Reusing MANIFEST /home/sam/.config/chromium/Default/IndexedDB/https_www.linkedin.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/04/10-15:21:55.860 5fa Recovering log #3
+2025/04/10-15:21:55.860 5fa Reusing old log /home/sam/.config/chromium/Default/IndexedDB/https_www.linkedin.com_0.indexeddb.leveldb/000003.log 
+2025/04/10-15:44:19.641 5fb Level-0 table #5: started
+2025/04/10-15:44:19.644 5fb Level-0 table #5: 19689 bytes OK
+2025/04/10-15:44:19.646 5fb Delete type=0 #3
+2025/04/10-15:44:19.646 5fb Manual compaction at level-0 from (begin) .. (end); will stop at (end)

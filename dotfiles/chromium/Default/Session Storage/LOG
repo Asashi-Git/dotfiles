@@ -1,0 +1,45 @@
+2025/04/15-09:30:56.318 4 Reusing MANIFEST /home/sam/.config/chromium/Default/Session Storage/MANIFEST-000001
+2025/04/15-09:30:56.319 4 Recovering log #326
+2025/04/15-09:30:56.320 4 Reusing old log /home/sam/.config/chromium/Default/Session Storage/000326.log 
+2025/04/15-09:31:10.318 4 Level-0 table #331: started
+2025/04/15-09:31:10.325 4 Level-0 table #331: 61374 bytes OK
+2025/04/15-09:31:10.329 4 Delete type=0 #326
+2025/04/15-10:50:58.095 5 Level-0 table #333: started
+2025/04/15-10:50:58.097 5 Level-0 table #333: 28583 bytes OK
+2025/04/15-10:50:58.099 5 Delete type=0 #330
+2025/04/15-13:29:03.456 5 Level-0 table #335: started
+2025/04/15-13:29:03.468 5 Level-0 table #335: 22881 bytes OK
+2025/04/15-13:29:03.472 5 Delete type=0 #332
+2025/04/15-15:03:03.454 5 Level-0 table #337: started
+2025/04/15-15:03:03.467 5 Level-0 table #337: 26497 bytes OK
+2025/04/15-15:03:03.472 5 Delete type=0 #334
+2025/04/15-15:03:03.473 5 Compacting 4@0 + 1@1 files
+2025/04/15-15:03:03.482 5 Generated table #338@0: 5421 keys, 183765 bytes
+2025/04/15-15:03:03.482 5 Compacted 4@0 + 1@1 files => 183765 bytes
+2025/04/15-15:03:03.484 5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/04/15-15:03:03.485 5 Delete type=2 #328
+2025/04/15-15:03:03.485 5 Delete type=2 #331
+2025/04/15-15:03:03.485 5 Delete type=2 #333
+2025/04/15-15:03:03.485 5 Delete type=2 #335
+2025/04/15-15:03:03.485 5 Delete type=2 #337
+2025/04/15-16:15:03.454 5 Level-0 table #340: started
+2025/04/15-16:15:03.467 5 Level-0 table #340: 16246 bytes OK
+2025/04/15-16:15:03.470 5 Delete type=0 #336
+2025/04/15-16:45:56.153 4 Level-0 table #342: started
+2025/04/15-16:45:56.164 4 Level-0 table #342: 10708 bytes OK
+2025/04/15-16:45:56.166 4 Delete type=0 #339
+2025/04/15-20:42:47.940 5 Level-0 table #344: started
+2025/04/15-20:42:47.951 5 Level-0 table #344: 30805 bytes OK
+2025/04/15-20:42:47.953 5 Delete type=0 #341
+2025/04/15-21:22:05.238 4 Level-0 table #346: started
+2025/04/15-21:22:05.248 4 Level-0 table #346: 77671 bytes OK
+2025/04/15-21:22:05.250 4 Delete type=0 #343
+2025/04/15-21:22:05.251 4 Compacting 4@0 + 1@1 files
+2025/04/15-21:22:05.255 4 Generated table #347@0: 5526 keys, 271055 bytes
+2025/04/15-21:22:05.255 4 Compacted 4@0 + 1@1 files => 271055 bytes
+2025/04/15-21:22:05.257 4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/04/15-21:22:05.257 4 Delete type=2 #338
+2025/04/15-21:22:05.257 4 Delete type=2 #340
+2025/04/15-21:22:05.257 4 Delete type=2 #342
+2025/04/15-21:22:05.257 4 Delete type=2 #344
+2025/04/15-21:22:05.257 4 Delete type=2 #346

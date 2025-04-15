@@ -1,0 +1,349 @@
+2025-04-08 11:37:25.827 [warning] /home/sam/.ssh/config: ENOENT: no such file or directory, open '/home/sam/.ssh/config'
+2025-04-08 11:37:25.827 [info] [Activation] Extension version: 0.108.0
+2025-04-08 11:37:25.835 [info] [Activation] Looking for git repository
+2025-04-08 11:37:25.835 [info] [Activation] Found 0 repositories during activation
+2025-04-08 11:37:25.835 [info] [Activation] Git repository found, initializing review manager and pr tree view.
+2025-04-08 11:37:25.835 [info] [GitAPI] Registering git provider
+2025-04-08 11:37:25.871 [info] [GitAPI] Repository file:///home/sam/.oh-my-zsh has been opened
+2025-04-08 11:37:25.920 [info] [Review+0] Validate state in progress
+2025-04-08 11:37:25.920 [info] [Review+0] Validating state...
+2025-04-08 11:37:25.920 [info] [FolderRepositoryManager+0] Cannot updates repositories as git is uninitialized
+2025-04-08 11:37:25.920 [info] [Activation] Repo state for file:///home/sam/.oh-my-zsh changed.
+2025-04-08 11:37:25.920 [info] [Activation] Repo file:///home/sam/.oh-my-zsh has already been setup.
+2025-04-08 11:37:26.001 [info] [GitAPI] Repository file:///home/sam/yay has been opened
+2025-04-08 11:37:26.001 [info] [Activation] Git initialization state changed: state=initialized
+2025-04-08 11:37:26.001 [info] [Review+0] Validate state in progress
+2025-04-08 11:37:26.001 [info] [Review+0] Validating state...
+2025-04-08 11:37:26.002 [info] [Review+1] Validate state in progress
+2025-04-08 11:37:26.002 [info] [Review+1] Validating state...
+2025-04-08 11:37:26.002 [warning] No remotes found. The following remotes are missing: origin, upstream
+2025-04-08 11:37:26.002 [info] [FolderRepositoryManager+1] No GitHub remotes found for folder /home/sam/yay
+2025-04-08 11:37:26.006 [info] [FolderRepositoryManager+0] Found GitHub remote for folder /home/sam/.oh-my-zsh
+2025-04-08 11:37:26.041 [info] [Review+1] Validate state in progress
+2025-04-08 11:37:26.041 [info] [Review+1] Validating state...
+2025-04-08 11:37:26.041 [info] [Activation] Repo state for file:///home/sam/yay changed.
+2025-04-08 11:37:26.041 [info] [Activation] Repo file:///home/sam/yay has already been setup.
+2025-04-08 11:37:26.348 [info] [GitHubServer] Received fallback response from the server: <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en" lang="en" >
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/archweb.css">
+    <link rel="stylesheet" href="/static/css/aurweb.css">
+
+    <!-- Resources -->
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+
+    <!-- Alternate resources -->
+    <link rel="alternate" type="application/rss+xml"
+          title="Newest Packages RSS" href="/rss">
+
+    <!-- Include local typeahead -->
+    <script type="text/javascript" src="/static/js/typeahead.js"></script>
+
+    <title>AUR (en) - Not Found</title>
+</head>
+
+    <body>
+        <div id="archnavbar" class="anb-aur">
+    <div id="archnavbarlogo">
+        <h1>
+            <a href="/" title="Return to the main page">Arch Linux User Repository</a>
+        </h1>
+    </div>
+    <div id="archnavbarmenu">
+        <ul id="archnavbarlist">
+            <li id="anb-home"><a href="https://www.archlinux.org/" title="Arch news, packages, projects and more">Home</a></li>
+            <li id="anb-packages"><a href="https://www.archlinux.org/packages/" title="Arch Package Database">Packages</a></li>
+            <li id="anb-forums"><a href="https://bbs.archlinux.org/" title="Community forums">Forums</a></li>
+            <li id="anb-wiki"><a href="https://wiki.archlinux.org/" title="Community documentation">Wiki</a></li>
+            <li id="anb-gitlab"><a href="https://gitlab.archlinux.org/archlinux" title="GitLab">GitLab</a></li>
+            <li id="anb-security"><a href="https://security.archlinux.org/" title="Arch Linux Security Tracker">Security</a></li>
+            <li id="anb-aur"><a href="/" title="Arch Linux User Repository">AUR</a></li>
+            <li id="anb-download"><a href="https://www.archlinux.org/download/" title="Get Arch Linux">Download</a></li>
+        </ul>
+    </div>
+</div>
+        <div id="content">
+    <div id="lang_sub">
+    <form method="post" action="/language">
+        <fieldset>
+            <div>
+                <select id="id_setlang" name="set_lang">
+                    
+                    <option
+                        value="ar"
+                        
+                    >
+                        العربية
+                    </option>
+                    
+                    <option
+                        value="ast"
+                        
+                    >
+                        Asturianu
+                    </option>
+                    
+                    <option
+                        value="ca"
+                        
+                    >
+                        Català
+                    </option>
+                    
+                    <option
+                        value="cs"
+                        
+                    >
+                        Český
+                    </option>
+                    
+                    <option
+                        value="da"
+                        
+                    >
+                        Dansk
+                    </option>
+                    
+                    <option
+                        value="de"
+                        
+                    >
+                        Deutsch
+                    </option>
+                    
+                    <option
+                        value="el"
+                        
+                    >
+                        Ελληνικά
+                    </option>
+                    
+                    <option
+                        value="en"
+                        
+                        selected="selected"
+                        
+                    >
+                        English
+                    </option>
+                    
+                    <option
+                        value="es"
+                        
+                    >
+                        Español
+                    </option>
+                    
+                    <option
+                        value="es_419"
+                        
+                    >
+                        Español (Latinoamérica)
+                    </option>
+                    
+                    <option
+                        value="fi"
+                        
+                    >
+                        Suomi
+                    </option>
+                    
+                    <option
+                        value="fr"
+                        
+                    >
+                        Français
+                    </option>
+                    
+                    <option
+                        value="he"
+                        
+                    >
+                        עברית
+                    </option>
+                    
+                    <option
+                        value="hr"
+                        
+                    >
+                        Hrvatski
+                    </option>
+                    
+                    <option
+                        value="hu"
+                        
+                    >
+                        Magyar
+                    </option>
+                    
+                    <option
+                        value="it"
+                        
+                    >
+                        Italiano
+                    </option>
+                    
+                    <option
+                        value="ja"
+                        
+                    >
+                        日本語
+                    </option>
+                    
+                    <option
+                        value="nb"
+                        
+                    >
+                        Norsk
+                    </option>
+                    
+                    <option
+                        value="nl"
+                        
+                    >
+                        Nederlands
+                    </option>
+                    
+                    <option
+                        value="pl"
+                        
+                    >
+                        Polski
+                    </option>
+                    
+                    <option
+                        value="pt_BR"
+                        
+                    >
+                        Português (Brasil)
+                    </option>
+                    
+                    <option
+                        value="pt_PT"
+                        
+                    >
+                        Português (Portugal)
+                    </option>
+                    
+                    <option
+                        value="ro"
+                        
+                    >
+                        Română
+                    </option>
+                    
+                    <option
+                        value="ru"
+                        
+                    >
+                        Русский
+                    </option>
+                    
+                    <option
+                        value="sk"
+                        
+                    >
+                        Slovenčina
+                    </option>
+                    
+                    <option
+                        value="sr"
+                        
+                    >
+                        Srpski
+                    </option>
+                    
+                    <option
+                        value="tr"
+                        
+                    >
+                        Türkçe
+                    </option>
+                    
+                    <option
+                        value="uk"
+                        
+                    >
+                        Українська
+                    </option>
+                    
+                    <option
+                        value="zh_CN"
+                        
+                    >
+                        简体中文
+                    </option>
+                    
+                    <option
+                        value="zh_TW"
+                        
+                    >
+                        正體中文
+                    </option>
+                    
+                </select>
+
+                <!-- Pass our current url path as next. -->
+                <input type="hidden" name="next" value="/api/v3/status">
+
+                <!-- Pass query_params over to /language via POST. -->
+                <input type="hidden" name="q" value="">
+
+                <input type="submit" value="Go">
+            </div>
+        </fieldset>
+    </form>
+</div>
+    <div id="archdev-navbar">
+    <ul>
+        
+            
+            <li><a href="/">AUR Home</a></li>
+        
+
+        
+        <li><a href="/packages">Packages</a></li>
+
+        
+            
+            <li><a href="/register">Register</a></li>
+
+            
+            <li><a href="/login?next=/api/v3/status">Login</a></li>
+        
+    </ul>
+</div>
+
+    
+    <div id="error-page" class="box">
+        <h2>404 - Page Not Found</h2>
+        <p>Sorry, the page you've requested does not exist.</p>
+        
+    </div>
+
+
+    <div id="footer">
+    <p>
+        aurweb <a href="https://gitlab.archlinux.org/archlinux/aurweb/-/commits/v6.2.16">v6.2.16</a>
+        
+    </p>
+    <p>Report issues <a href="https://gitlab.archlinux.org/archlinux/aurweb/-/issues/new?issuable_template=Bug">here</a>.</p>
+    <p>Copyright &copy; 2004-2025 aurweb Development Team.</p>
+    <p>AUR packages are user produced content. Any use of the provided files is at your own risk.</p>
+</div>
+</div>
+2025-04-08 11:37:26.348 [warning] [GitHubServer] No response from host https://aur.archlinux.org/yay: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-04-08 11:37:26.348 [warning] No remotes found. The following remotes are missing: origin, upstream
+2025-04-08 11:37:26.348 [info] [FolderRepositoryManager+1] No GitHub remotes found for folder /home/sam/yay
+2025-04-08 11:37:26.349 [info] [FolderRepositoryManager+1] Trying to use globalState for assignableUsers.
+2025-04-08 11:37:26.355 [info] [FolderRepositoryManager+1] GlobalState does not exist for assignableUsers.
+2025-04-08 11:37:26.357 [info] [Review+1] No matching pull request metadata found locally for current branch master
+2025-04-08 11:37:26.357 [info] [Review+1] No matching pull request metadata found on GitHub for current branch master
+2025-04-08 11:37:26.368 [info] [FolderRepositoryManager+0] Trying to use globalState for assignableUsers.
+2025-04-08 11:37:26.376 [info] [Review+0] No matching pull request metadata found locally for current branch master
+2025-04-08 11:37:26.388 [info] [FolderRepositoryManager+0] GlobalState does not exist for assignableUsers.
+2025-04-08 11:37:28.746 [info] [Review+0] No matching pull request metadata found on GitHub for current branch master

@@ -1,0 +1,14 @@
+{
+    "workbench.colorTheme": "Wallace Corporation",
+    "symbols.hidesExplorerArrows": false,
+    "workbench.iconTheme": "symbols",
+    "window.titleBarStyle": "custom",
+    "editor.renderWhitespace": "all",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.wordWrap": "on",
+    "files.autoSave": "afterDelay",
+    "code-runner.runInTerminal": true,
+    "liveServer.settings.donotShowInfoMsg": true
+}

@@ -1,0 +1,18 @@
+2025/04/11-00:22:41.231 99c Creating DB /home/sam/.config/chromium/Default/IndexedDB/https_www.crunchyroll.com_0.indexeddb.leveldb since it was missing.
+2025/04/11-00:22:41.234 99c Reusing MANIFEST /home/sam/.config/chromium/Default/IndexedDB/https_www.crunchyroll.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/04/11-00:22:41.240 9a8 Level-0 table #5: started
+2025/04/11-00:22:41.242 9a8 Level-0 table #5: 1399 bytes OK
+2025/04/11-00:22:41.244 9a8 Delete type=0 #3
+2025/04/11-00:22:41.244 99e Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/04/11-00:22:46.517 99d Level-0 table #7: started
+2025/04/11-00:22:46.518 99d Level-0 table #7: 7336 bytes OK
+2025/04/11-00:22:46.520 99d Delete type=0 #4
+2025/04/11-00:22:46.520 99d Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2025/04/11-00:22:46.520 99d Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x04\x01\x02\x013\x00[\x00D\x00E\x00F\x00A\x00U\x00L\x00T\x00]\x00!\x001\x00:\x009\x003\x009\x005\x003\x007\x007\x008\x009\x001\x001\x009\x00:\x00w\x00e\x00b\x00:\x005\x003\x002\x004\x00f\x00f\x00a\x001\x001\x008\x007\x002\x004\x00a\x00a\x00d\x00d\x00d\x005\x006\x000\x00a' @ 156 : 1
+2025/04/11-00:22:46.520 99d Compacting 1@1 + 1@2 files
+2025/04/11-00:22:46.521 99d Generated table #8@1: 59 keys, 2747 bytes
+2025/04/11-00:22:46.521 99d Compacted 1@1 + 1@2 files => 2747 bytes
+2025/04/11-00:22:46.523 99d compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/04/11-00:22:46.523 99d Delete type=2 #5
+2025/04/11-00:22:46.523 99d Delete type=2 #7
+2025/04/11-00:22:46.523 99d Manual compaction at level-1 from '\x00\x04\x01\x02\x013\x00[\x00D\x00E\x00F\x00A\x00U\x00L\x00T\x00]\x00!\x001\x00:\x009\x003\x009\x005\x003\x007\x007\x008\x009\x001\x001\x009\x00:\x00w\x00e\x00b\x00:\x005\x003\x002\x004\x00f\x00f\x00a\x001\x001\x008\x007\x002\x004\x00a\x00a\x00d\x00d\x00d\x005\x006\x000\x00a' @ 156 : 1 .. (end); will stop at (end)

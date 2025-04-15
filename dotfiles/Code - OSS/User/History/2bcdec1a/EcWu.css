@@ -1,0 +1,58 @@
+.line {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.block {
+  display: block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+
+.bg-1 {
+  background-color: #00005f;
+}
+.bg-2 {
+  background-color: #ffffd7;
+}
+.bg-3 {
+  background-color: #fff;
+}
+.bg-4 {
+  background-color: #d70087;
+}
+.bg-5 {
+  background-color: #585858;
+}
+.bg-6 {
+  background-color: #ffaf00;
+}
+.bg-7 {
+  background-color: #000;
+}
+.bg-8 {
+  background-color: #f00;
+}
+.bg-9 {
+  background-color: #ffff00;
+}
+.bg-10 {
+  background-color: #0087ff;
+}
+.bg-11 {
+  background-color: #87ff00;
+}
+.bg-12 {
+  background-color: #0000af;
+}
+.bg-13 {
+  background-color: #d787af;
+}
+.bg-14 {
+  background-color: #d787af;
+}
+.bg-15 {
+  background-color: #fff;
+}

@@ -1,0 +1,71 @@
+2025-04-09 17:31:24.756 [info] Extension host with pid 17706 started
+2025-04-09 17:31:24.756 [info] Skipping acquiring lock for /home/sam/.config/Code - OSS/User/workspaceStorage/f4b05a63969cf4ddd0cb643afc04a4c2.
+2025-04-09 17:31:24.877 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-04-09 17:31:24.890 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2025-04-09 17:31:25.150 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-04-09 17:31:25.161 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-04-09 17:31:25.184 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-04-09 17:31:25.211 [info] Eager extensions activated
+2025-04-09 17:31:25.218 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-04-09 17:31:25.220 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-04-09 17:31:25.228 [info] ExtensionService#_doActivateExtension castrogusttavo.symbols, startup: false, activationEvent: 'onStartupFinished'
+2025-04-09 17:31:25.230 [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: false, activationEvent: 'onStartupFinished'
+2025-04-09 17:31:25.231 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-04-09 17:31:25.265 [info] ExtensionService#_doActivateExtension formulahendry.code-runner, startup: false, activationEvent: 'onStartupFinished'
+2025-04-09 17:31:25.271 [info] ExtensionService#_doActivateExtension vadimcn.vscode-lldb, startup: false, activationEvent: 'onStartupFinished', root cause: franneck94.vscode-c-cpp-config
+2025-04-09 17:31:25.278 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onStartupFinished', root cause: GitHub.vscode-pull-request-github
+2025-04-09 17:31:25.288 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2025-04-09 17:31:25.323 [info] ExtensionService#_doActivateExtension franneck94.vscode-c-cpp-config, startup: false, activationEvent: 'onStartupFinished'
+2025-04-09 17:31:25.324 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onStartupFinished'
+2025-04-09 17:31:25.375 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-04-09 17:31:25.378 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-04-09 17:31:25.403 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-04-09 17:31:25.458 [error] Activating extension GitHub.vscode-pull-request-github failed due to an error:
+2025-04-09 17:31:25.458 [error] Error: Extension 'GitHub.vscode-pull-request-github' CANNOT use API proposal: diffCommand.
+Its package.json#enabledApiProposals-property declares:  but NOT diffCommand.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api GitHub.vscode-pull-request-github
+	at R (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:105:19265)
+	at Object.registerDiffInformationCommand (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:173:30058)
+	at K0 (/home/sam/.vscode-oss/extensions/github.vscode-pull-request-github-0.108.0-universal/dist/extension.js:2177:2008)
+	at L4 (/home/sam/.vscode-oss/extensions/github.vscode-pull-request-github-0.108.0-universal/dist/extension.js:2517:4466)
+	at G4 (/home/sam/.vscode-oss/extensions/github.vscode-pull-request-github-0.108.0-universal/dist/extension.js:2517:9072)
+	at async V4 (/home/sam/.vscode-oss/extensions/github.vscode-pull-request-github-0.108.0-universal/dist/extension.js:2517:6078)
+	at async cw.n (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:111:13415)
+	at async cw.m (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:111:13378)
+	at async cw.l (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:111:12834)
+2025-04-09 17:31:30.002 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:31:30.002 [error] undefined
+2025-04-09 17:31:39.720 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:31:39.720 [error] undefined
+2025-04-09 17:31:39.762 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:31:39.762 [error] undefined
+2025-04-09 17:31:39.790 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:31:39.790 [error] undefined
+2025-04-09 17:31:46.334 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:31:46.334 [error] undefined
+2025-04-09 17:31:46.490 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:31:46.490 [error] undefined
+2025-04-09 17:31:47.300 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:31:47.301 [error] undefined
+2025-04-09 17:31:52.352 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:31:52.352 [error] undefined
+2025-04-09 17:31:53.986 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:31:53.986 [error] undefined
+2025-04-09 17:31:54.092 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:31:54.092 [error] undefined
+2025-04-09 17:31:54.311 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:31:54.311 [error] undefined
+2025-04-09 17:31:55.765 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:31:55.765 [error] undefined
+2025-04-09 17:31:57.269 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:31:57.269 [error] undefined
+2025-04-09 17:33:19.906 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:33:19.906 [error] undefined
+2025-04-09 17:33:20.508 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:33:20.508 [error] undefined
+2025-04-09 17:33:30.397 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:33:30.397 [error] undefined
+2025-04-09 17:33:40.868 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:33:40.868 [error] undefined
+2025-04-09 17:33:41.302 [error] [ecmel.vscode-html-css] provider FAILED
+2025-04-09 17:33:41.302 [error] undefined

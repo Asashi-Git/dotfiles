@@ -1,0 +1,22 @@
+~/.config/nvim/
+├── commands.txt        # Custom command reference/documentation
+├── init.lua            # Main entry point - sets up Lazy and loads basic config
+├── lazy-lock.json      # Lock file for Lazy plugin versions
+└── lua/                    # Lua modules directory
+    ├── plugins.lua         # Empty plugin specification (plugins are loaded from directory)
+    ├── vim-options.lua     # Basic Vim settings and keymaps
+    └── plugins/            # Individual plugin configurations
+        ├── alpha.lua                 # Configuration for the alpha-nvim plugin (start screen)
+        ├── catppuccin.lua            # Configuration for the Catppuccin color scheme
+        ├── completions.lua           # Configuration for autocompletions using nvim-cmp
+        ├── debuggin.lua              # Configuration for debugging tools (nvim-dap)
+        ├── gitsigns.lua              # Configuration for Git integration (gitsigns)
+        ├── git-stuff.lua             # Additional Git related commands
+        ├── lsp-config.lua            # Setup for Language Server Protocol (LSP) configurations
+        ├── mason-tools.lua           # Configuration for managing tools and servers via Mason
+        ├── none-ls.lua               # Configuration for integrating formatters and linters with null-ls
+        ├── nvim-tmux-navigation.lua  # Configuration for easier navigation between Neovim and tmux
+        ├── oil.lua                   # Configuration for file browsing with oil.nvim
+        ├── swagger-preview.lua       # Configuration for live Swagger API documentation preview
+        ├── telescope.lua             # Configuration for fuzzy finder telescope.nvim
+        └── treesitter.lua            # Configuration for syntax highlighting and indentation with treesitter
