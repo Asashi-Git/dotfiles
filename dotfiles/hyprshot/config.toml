@@ -1,4 +1,4 @@
 # ~/.config/hyprshot/config.toml
-screenshot_dir = "/home/sam/Pictures/screenshots"
+screenshot_dir = "~/Pictures/screenshots"
 show_notifications = true
 copy_to_clipboard = true
